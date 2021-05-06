@@ -7,7 +7,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // set up routes
-app.use('/auth', authRoutes);
+app.use('/auth', authRoutes);  // 看來 app.use 就是 call. 其實與 app.get 類似，但改用 .use 的而非直接給 function 
 
 // create home route
 app.get('/', (req, res) => {

@@ -4,7 +4,9 @@
   "description": "Course files for The Net Ninja OAuth playlist on YouTube",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon --inspect-brk app.js",
+    "start": "node --inspect-brk app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/iamshaunjp/oauth-playlist#readme",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "nodemon": "^2.0.7"
   }
 }
